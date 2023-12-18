@@ -1,3 +1,5 @@
+# Name:Lokhnath J
+# Register Number:23004865
 # Experiment 05 Implementation of flipflops using verilog
 
 ### AIM:
