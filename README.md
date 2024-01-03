@@ -108,7 +108,31 @@ Q(t+1)=T′Q(t)+TQ(t)′
 ⇒Q(t+1)=T⊕Q(t)
 
 ### Procedure
-/* write all the steps invloved */
+# 1)Create a New Project:
+
+Open Quartus and create a new project by selecting "File" > "New Project Wizard."
+Follow the wizard's instructions to set up your project, including specifying the project name, location, and target device (FPGA).
+# 2)Create a New Design File:
+
+Once the project is created, right-click on the project name in the Project Navigator and select "Add New File."
+Choose "Verilog HDL File" or "VHDL File," depending on your chosen hardware description language.
+# 3)Write the Combinational Logic Code:
+
+Open the newly created Verilog or VHDL file and write the code for your combinational logic.
+# 4)Compile the Project:
+
+To compile the project, click on "Processing" > "Start Compilation" in the menu.
+Quartus will analyze your code, synthesize it into a netlist, and perform optimizations based on your target FPGA device.
+# 5)Analyze and Fix Errors:
+
+If there are any errors or warnings during the compilation process, Quartus will display them in the Messages window.
+Review and fix any issues in your code if necessary.
+View the RTL diagram.
+# 6)Verification:
+
+Click on "File" > "New" > "Verification/Debugging Files" > "University Program VWF".
+Once Waveform is created Right Click on the Input/Output Panel > " Insert Node or Bus" > Click on Node Finder > Click On "List" > Select All.
+Give the Input Combinations according to the Truth Table and then simulate the Output Waveform.
 
 
 
@@ -175,20 +199,19 @@ endmodule
 
 
 
-
-
 ### RTL LOGIC FOR FLIPFLOPS 
 
 # SR flipflop
-![image](https://github.com/Lokhnath10/Experiment--05-Implementation-of-flipflops-using-verilog/assets/138969918/8f71849a-3392-4637-82e3-9aa8ddfdbd57)
+![image](https://github.com/Lokhnath10/Experiment--05-Implementation-of-flipflops-using-verilog/assets/138969918/902d12b7-b374-4231-9407-820dd66bc0a4)
 
 # JK-flipflop
-![image](https://github.com/Lokhnath10/Experiment--05-Implementation-of-flipflops-using-verilog/assets/138969918/1a9e0bcc-1fe3-4e75-bd26-67df633ec168)
-# D-flipflop
-![image](https://github.com/Lokhnath10/Experiment--05-Implementation-of-flipflops-using-verilog/assets/138969918/0c32fe62-82c4-414f-adf5-8f9c634b7119)
-# T-flipflop
-![image](https://github.com/Lokhnath10/Experiment--05-Implementation-of-flipflops-using-verilog/assets/138969918/e94e9587-5df6-4b0a-9680-585aef90e1af)
+![image](https://github.com/Lokhnath10/Experiment--05-Implementation-of-flipflops-using-verilog/assets/138969918/fd4c5897-89d3-4c14-8e23-7db7f96ab7f0)
 
+# D-flipflop
+![image](https://github.com/Lokhnath10/Experiment--05-Implementation-of-flipflops-using-verilog/assets/138969918/ebf9efbc-7de1-4a6b-a289-4fb2cfd00704)
+
+# T-flipflop
+![image](https://github.com/Lokhnath10/Experiment--05-Implementation-of-flipflops-using-verilog/assets/138969918/7d894a4c-db00-4de0-8488-d3e9a2145d6a)
 
 
 
@@ -197,13 +220,16 @@ endmodule
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 # SR-flipflop
-![image](https://github.com/Lokhnath10/Experiment--05-Implementation-of-flipflops-using-verilog/assets/138969918/f960daf5-a180-4a6b-89d4-9798ce00c7f9)
+![image](https://github.com/Lokhnath10/Experiment--05-Implementation-of-flipflops-using-verilog/assets/138969918/51933ccd-94d6-4c7b-a11b-bc1af3690feb)
+
 # JK-flipflop
-![image](https://github.com/Lokhnath10/Experiment--05-Implementation-of-flipflops-using-verilog/assets/138969918/7107bbab-7d17-4cb1-b18a-9faa0ac95272)
+![image](https://github.com/Lokhnath10/Experiment--05-Implementation-of-flipflops-using-verilog/assets/138969918/bb2b201f-2908-4197-aaab-275725d8244b)
+
 # D-flipflop
-![image](https://github.com/Lokhnath10/Experiment--05-Implementation-of-flipflops-using-verilog/assets/138969918/4560d8c3-4e00-4093-a121-3e3ebe537c89)
+![image](https://github.com/Lokhnath10/Experiment--05-Implementation-of-flipflops-using-verilog/assets/138969918/86c928d2-f548-4dca-9da4-cf36208d0908)
+
 # T-flipflop
-![image](https://github.com/Lokhnath10/Experiment--05-Implementation-of-flipflops-using-verilog/assets/138969918/331c8fe5-8f20-4586-b23d-61f937229b06)
+![image](https://github.com/Lokhnath10/Experiment--05-Implementation-of-flipflops-using-verilog/assets/138969918/864d2a81-51a5-49ad-9c9a-c43bae8ad771)
 
 # RESULTS:
 Thus implementation of SR,JK,D and T flipflops using nand gates are done sucessfully.
